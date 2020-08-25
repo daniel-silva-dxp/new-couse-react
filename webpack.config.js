@@ -40,7 +40,7 @@ module.exports = {
 		new webpack.HotModuleReplacementPlugin(),
 
 		new HtmlWebpackPlugin({
-			title: 'SPA with Reactjs',
+			title: 'Reactjs with Webpack',
 			template: path.join(__dirname, 'public', 'index.html'),
 			filename: './index.html'
 		}),
