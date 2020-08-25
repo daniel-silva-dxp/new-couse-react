@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import App from './App';
 
-const App = () => {
-	return <h1>NAVBAR</h1>;
-};
-
-const container = document.querySelector('#root');
-container ? ReactDOM.render(<App />, container) : false;
+ReactDOM.render(
+	<React.StrictMode>
+		<App />
+	</React.StrictMode>,
+	document.getElementById('root')
+);
