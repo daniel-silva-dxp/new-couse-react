@@ -4,8 +4,9 @@ import './style.css';
 
 const Square = ({ handleClick }) => {
 	return (
-		<div className="square square-flex" onClick={handleClick}>
-			<div className="txt">Event</div>
+		<div className="wrap" onClick={handleClick}>
+			<div className="btn">Clique aqui</div>
+			<div className="bg-btn" />
 		</div>
 	);
 };
