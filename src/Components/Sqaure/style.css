@@ -1,62 +1,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400;700&display=swap');
-.square {
-	width: 100px;
-	height: 100px;
-	background: #f8f8f8;
-	border-radius: 3px;
-	-webkit-box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.35);
-	-moz-box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.35);
-	box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.35);
-	transition: all .2s ease-in-out;
-}
 
-.square:hover {
-	cursor: pointer;
-	-webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.35);
-	-moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.35);
-	box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.35);
-}
-
-.square-flex {
-	margin: 0 auto;
+.wrap,
+.btn {
 	display: flex;
-	align-items: center;
 	justify-content: center;
+	align-items: center;
 }
 
-.txt {
-	font-family: 'Roboto Mono', monospace;
-	color: #1e1e1e;
-	font-weight: 400;
-	text-transform: uppercase;
-	letter-spacing: 1px;
+div.wrap {
+	width: 100%;
+	height: 400px;
 	position: relative;
-	padding: 5px;
-	transition: all .3s ease-in-out;
 }
 
-.txt::before,
-.txt::after {
-	width: 0;
-	height: 2px;
-	content: '';
-	bottom: 0;
-	background: #1e1e1e;
+.wrap div:nth-child(1),
+.wrap div:nth-child(2) {
+	font-family: 'Roboto Mono', monospace;
+	font-weight: 900;
+	text-transform: uppercase;
+	width: 300px;
+	height: 50px;
+	border-radius: 50px;
+	background: #00ec85;
+	color: #200a3f;
+}
+
+.btn {
+	cursor: pointer;
+	animation: btn 2s infinite;
 	position: absolute;
-	transition: width .3s ease;
+	z-index: 1;
 }
 
-.txt::before {
-	right: 50%;
+.bg-btn {
+	animation: bg 2s infinite;
+	opacity: 5;
 }
 
-.txt::after {
-	left: 50%;
+@keyframes btn {
+	0% {
+		transform: scale(1);
+	}
+	25% {
+		transform: scale(1.05);
+	}
+	50% {
+		transform: scale(1);
+	}
 }
 
-.square:hover .txt::before,
-.square:hover .txt::after,
-.txt:hover::before,
-.txt:hover::after {
-	width: 50%;
+@keyframes bg {
+	10% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.2);
+		opacity: 0;
+		height: 60px;
+	}
+	100% {
+		opacity: 0;
+	}
 }
