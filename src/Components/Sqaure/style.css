@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400;700&display=swap');
+.square {
+	width: 100px;
+	height: 100px;
+	background: #f8f8f8;
+	border-radius: 3px;
+	-webkit-box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.35);
+	-moz-box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.35);
+	box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.35);
+	transition: all .2s ease-in-out;
+}
+
+.square:hover {
+	cursor: pointer;
+	-webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.35);
+	-moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.35);
+	box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.35);
+}
+
+.square-flex {
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.txt {
+	font-family: 'Roboto Mono', monospace;
+	color: #1e1e1e;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	position: relative;
+	padding: 5px;
+	transition: all .3s ease-in-out;
+}
+
+.txt::before,
+.txt::after {
+	width: 0;
+	height: 2px;
+	content: '';
+	bottom: 0;
+	background: #1e1e1e;
+	position: absolute;
+	transition: width .3s ease;
+}
+
+.txt::before {
+	right: 50%;
+}
+
+.txt::after {
+	left: 50%;
+}
+
+.square:hover .txt::before,
+.square:hover .txt::after,
+.txt:hover::before,
+.txt:hover::after {
+	width: 50%;
+}
