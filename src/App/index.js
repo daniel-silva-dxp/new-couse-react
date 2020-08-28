@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import Banner from '../Components/Banner';
-import Button from '../Components/Button';
-import LikeButton from '../Components/LikeButton';
-import Title from '../Components/Title';
+import Item from '../Components/Item';
+import NewButton from '../Components/NewButton';
 
 import './style.css';
 
@@ -10,23 +8,27 @@ class App extends Component {
 	constructor() {
 		super();
 		this.state = {
-			name: ''
-		}
-		this.click = this.click.bind(this)
+			btnContent: '',
+			btn: ''
+		};
 	}
-	click() {
-		this.setState({
-			name: 'My name is Daneil Silva'
-		});
-	}
+
 	render() {
 		return (
-			<div>
-				<Banner />
-				<Title name={this.state.name} />
-				<div>
-					<Button handleClick={this.click}>Click</Button>
-					<LikeButton />
+			<div className="container">
+				<div className="content-wrap">
+					<Item classContent={this.state.classContent} classBtn={this.state.btn} />
+					<div className="align-items">
+						<NewButton
+							handleClick={() =>
+								this.setState({
+									btnContent: 'circle-content-animate',
+									btn: 'circle-animate'
+								})}
+						>
+							Animate Ball
+						</NewButton>
+					</div>
 				</div>
 			</div>
 		);
