@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+button {
+	outline: 0;
+	border: none;
+	background: transparent;
+	cursor: pointer;
+	margin: 130px 5px 5px;
+	-webkit-apparance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+button.btn {
+	font-family: 'Open Sans', sans-serif;
+	display: inline-block;
+	border-radius: 3px;
+	-webkit-transition: all 0.1s ease-in-out;
+	transition: all 0.1s ease-in-out;
+	-webkit-box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.2);
+	box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.2);
+}
+
+button.btn-medium {
+	height: 40px;
+	font-size: 14px;
+	line-height: 14px;
+	font-weight: 600;
+	padding: 0 26px;
+}
+
+button.btn-white {
+	color: #232323;
+	background: #fff;
+}
+
+button.btn-white:hover {
+	background: #dddcdc;
+	-webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.4);
+	box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.4);
+}
+button.btn-white:active {
+	-webkit-box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.2);
+	box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.2);
+}
