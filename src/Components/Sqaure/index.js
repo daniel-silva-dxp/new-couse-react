@@ -2,13 +2,13 @@ import React from 'react';
 
 import './style.css';
 
-const Square = ({ handleClick }) => {
+const Button = ({ handleClick, children }) => {
 	return (
 		<div className="wrap" onClick={handleClick}>
-			<div className="btn">Clique aqui</div>
+			<div className="btn">{children}</div>
 			<div className="bg-btn" />
 		</div>
 	);
 };
 
-export default Square;
+export default Button;

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Banner from '../Components/Banner';
-import Square from '../Components/Sqaure';
+import Button from '../Components/Sqaure';
 import Title from '../Components/Title';
 
 import './style.css';
@@ -15,7 +15,7 @@ class App extends Component {
 				<Banner />
 				<Title name="Daniel Silva" />
 				<div>
-					<Square handleClick={this.click} />
+					<Button handleClick={this.click}>Click</Button>
 				</div>
 			</div>
 		);
