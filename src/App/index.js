@@ -1,35 +1,34 @@
 import React, { Component } from 'react';
-import Item from '../Components/Item';
+import Timer from '../Components/Timer';
 import NewButton from '../Components/NewButton';
 
 import './style.css';
 
 class App extends Component {
 	constructor() {
+		console.log('constructor');
 		super();
 		this.state = {
-			btnContent: '',
-			btn: ''
+			showTimer: true
 		};
 	}
 
+	componentWillMount() {
+		console.log('componentWillMount');
+	}
+
+	componentDidMount() {
+		console.log('componentDidMount');
+	}
+
 	render() {
+		console.log('render');
 		return (
 			<div className="container">
-				<div className="content-wrap">
-					<Item classContent={this.state.classContent} classBtn={this.state.btn} />
-					<div className="align-items">
-						<NewButton
-							handleClick={() =>
-								this.setState({
-									btnContent: 'circle-content-animate',
-									btn: 'circle-animate'
-								})}
-						>
-							Animate Ball
-						</NewButton>
-					</div>
-				</div>
+				{this.state.showTimer && <Timer />}
+				<NewButton handleClick={() => this.setState({ showTimer: !this.state.showTimer })}>
+					Show/Hide Timer
+				</NewButton>
 			</div>
 		);
 	}

@@ -57,11 +57,11 @@
 	animation: anim 2s linear infinite;
 }
 
-.circle-content:nth-child(2) .circle {
+.circle-content:nth-child(2) .circle-animate {
 	animation-delay: -.3s;
 }
 
-.circle-content:nth-child(3) .circle {
+.circle-content:nth-child(3) .circle-animate {
 	animation-delay: -.6s;
 }
 
