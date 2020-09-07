@@ -1,7 +1,3 @@
-body {
-	background: #f8f8f8;
-}
-
 .container {
 	width: 100%;
 	padding-right: 15px;
@@ -33,4 +29,12 @@ body {
 	.container {
 		max-width: 1440px;
 	}
+}
+
+.content {
+	width: 100%;
+	height: 50vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
