@@ -4,7 +4,7 @@ import './style.css';
 
 const NewButton = ({ children, handleClick }) => {
 	return (
-		<button className="btn btn-medium btn-white" onClick={handleClick}>
+		<button className="btn btn-medium btn-black" onClick={handleClick}>
 			{children}
 		</button>
 	);
