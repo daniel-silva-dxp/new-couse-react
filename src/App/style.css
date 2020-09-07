@@ -1,5 +1,5 @@
 body {
-	background: #f22739;
+	background: #f8f8f8;
 }
 
 .container {
@@ -33,13 +33,4 @@ body {
 	.container {
 		max-width: 1440px;
 	}
-}
-
-.content-wrap {
-	margin-top: 40vh;
-}
-.align-items {
-	display: flex;
-	justify-content: center;
-	align-items: center;
 }

@@ -2,13 +2,12 @@ import React from 'react';
 
 import './style.css';
 
-const Button = ({ handleClick, children }) => {
+const NewButton = ({ children, handleClick }) => {
 	return (
-		<div className="wrap" onClick={handleClick}>
-			<div className="btn">{children}</div>
-			<div className="bg-btn" />
-		</div>
+		<button className="btn btn-medium btn-white" onClick={handleClick}>
+			{children}
+		</button>
 	);
 };
 
-export default Button;
+export default NewButton;
