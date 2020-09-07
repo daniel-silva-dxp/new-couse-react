@@ -1,4 +1,8 @@
 import React, { Component } from 'react';
+import Bio from '../../Components/Bio';
+import Search from '../../Components/Search';
+
+import './style.css';
 
 export default class Home extends Component {
 	constructor() {
@@ -10,19 +14,8 @@ export default class Home extends Component {
 	render() {
 		return (
 			<div>
-				<h1>Home</h1>
-				<form>
-					<input
-						type="text"
-						value={this.state.value}
-						onChange={(e) => {
-							this.setState({
-								value: e.target.value
-							});
-						}}
-					/>
-				</form>
-				<div>{this.state.value}</div>
+				<Search />
+				<Bio />
 			</div>
 		);
 	}
