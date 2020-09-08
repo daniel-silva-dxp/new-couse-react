@@ -76,7 +76,6 @@
 
 .repos-info {
 	display: flex;
-	flex-flow: column;
 	align-items: center;
 	justify-content: center;
 }
@@ -85,7 +84,14 @@
 	margin-bottom: 5px;
 }
 
-.repos-info li span:last-child::before {
-	content: ': ';
+.margin-right-5 {
+	margin-right: 5px;
+}
+
+.margin-right-10 {
 	margin-right: 10px;
+}
+
+FaFolderOpen {
+	font-size: 18px
 }
