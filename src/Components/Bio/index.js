@@ -1,6 +1,7 @@
 import React from 'react';
 import Actions from '../Actions';
 import Repos from '../Repos';
+import { FaFolderOpen, FaStar, FaUserFriends, FaUserPlus } from 'react-icons/fa';
 
 import './style.css';
 
@@ -20,16 +21,20 @@ const Bio = () => {
 					<h4>daniel-silva-dxp</h4>
 					<div className="wrap-repos-info">
 						<ul className="repos-info">
-							<li>
-								<span>Repositórios</span>
+							<li className="margin-right-10">
+								<span className='margin-right-5'><FaFolderOpen/></span>
+								<span>10</span>
+							</li>
+							<li className="margin-right-10">
+								<span className='margin-right-5'><FaStar/></span>
+								<span>10</span>
+							</li>
+							<li className="margin-right-10">
+								<span className='margin-right-5'><FaUserFriends /></span>
 								<span>10</span>
 							</li>
 							<li>
-								<span>Seguidores</span>
-								<span>10</span>
-							</li>
-							<li>
-								<span>Seguindo</span>
+								<span className='margin-right-5'><FaUserPlus /></span>
 								<span>10</span>
 							</li>
 						</ul>
