@@ -21,20 +21,28 @@ const Bio = () => {
 					<h4>daniel-silva-dxp</h4>
 					<div className="wrap-repos-info">
 						<ul className="repos-info">
-							<li className="margin-right-10">
-								<span className='margin-right-5'><FaFolderOpen/></span>
+							<li className="margin-right-15">
+								<span className="margin-right-5">
+									<FaFolderOpen />
+								</span>
 								<span>10</span>
 							</li>
-							<li className="margin-right-10">
-								<span className='margin-right-5'><FaStar/></span>
+							<li className="margin-right-15">
+								<span className="margin-right-5">
+									<FaStar />
+								</span>
 								<span>10</span>
 							</li>
-							<li className="margin-right-10">
-								<span className='margin-right-5'><FaUserFriends /></span>
+							<li className="margin-right-15">
+								<span className="margin-right-5">
+									<FaUserFriends />
+								</span>
 								<span>10</span>
 							</li>
 							<li>
-								<span className='margin-right-5'><FaUserPlus /></span>
+								<span className="margin-right-5">
+									<FaUserPlus />
+								</span>
 								<span>10</span>
 							</li>
 						</ul>
@@ -42,7 +50,26 @@ const Bio = () => {
 				</div>
 			</div>
 			<Actions />
-			<Repos />
+			<div>
+				<Repos
+					className="repos"
+					title="Repositories"
+					repos={[
+						{ name: 'Repository I', link: '#' },
+						{ name: 'Repository II', link: '#' },
+						{ name: 'Repository III', link: '#' }
+					]}
+				/>
+				<Repos
+					className="starred"
+					title="Starreds"
+					repos={[
+						{ name: 'Starred I', link: '#' },
+						{ name: 'Starred II', link: '#' },
+						{ name: 'Starred III', link: '#' }
+					]}
+				/>
+			</div>
 		</div>
 	);
 };
