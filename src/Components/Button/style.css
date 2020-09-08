@@ -31,11 +31,11 @@ button.btn-medium {
 
 button.btn-black {
 	color: #fff;
-	background: #232323;
+	background: #323540;
 }
 
 button.btn-black:hover {
-	background: #565656;
+	background: #161711;
 	-webkit-box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.4);
 	-moz-box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.4);
 	box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.4);
