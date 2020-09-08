@@ -1,13 +1,14 @@
 import React from 'react';
 import Button from '../Button';
+import { FaFolderOpen, FaStar } from 'react-icons/fa';
 
 import './style.css';
 
 const Actions = () => {
 	return (
 		<div className="wrap-button">
-			<Button>Repositórios</Button>
-			<Button>Favoritos</Button>
+			<Button><FaFolderOpen/></Button>
+			<Button><FaStar/></Button>
 		</div>
 	);
 };
