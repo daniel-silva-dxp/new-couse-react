@@ -2,20 +2,19 @@ import React from 'react';
 
 import './style.css';
 
-const Repos = () => {
+const Repos = ({ className, title, repos }) => {
 	return (
-		<div className="repos box">
-			<h4>Repositories</h4>
-			<ul className="">
-				<li>
-					<a href="">Repos</a>
-				</li>
-				<li>
-					<a href="">Repos</a>
-				</li>
-				<li>
-					<a href="">Repos</a>
-				</li>
+		<div className={`box ${className}`}>
+			<h4>{title}</h4>
+
+			<ul>
+				{repos.map((repo, index) => (
+					<li>
+						<a href={repo.link} target="_blank" key={index} rel="noopener noreferrer">
+							{repo.name}
+						</a>
+					</li>
+				))}
 			</ul>
 		</div>
 	);
