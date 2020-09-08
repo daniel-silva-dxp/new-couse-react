@@ -1,1 +1,35 @@
+.box {
+	padding: 10px;
+	margin-top: 10px;
+	background-color: #fff;
+	-webkit-box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.2);
+	box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.2);
+}
+.repos,
+.starred {
+	width: 100%;
+	padding: 20px;
+	border-radius: 3px;
+}
 
+.repos h4,
+.starred h4 {
+	font-size: 14px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+.repos ul,
+.starred ul {
+	list-style: square;
+	margin: 0 0 0 10px;
+}
+.repos ul li,
+.starred ul li {
+	font-size: .9em;
+	color: #232426;
+}
+.repos ul li:nth-of-type(2n + 1),
+.starred ul li:nth-of-type(2n + 1) {
+	background: #f8f8f8;
+}
