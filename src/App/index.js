@@ -3,16 +3,30 @@ import Home from '../Pages/Home';
 
 import './style.css';
 
-class App extends Component {
+export default class App extends Component {
+	constructor() {
+		super();
+		this.state = {
+			show: true,
+			userInfo: {
+				userName: 'Daniel Silva'
+			},
+			repos: [ { link: '#', name: 'Repository' } ],
+			starreds: [ { link: '#', name: 'Starred' } ]
+		};
+	}
 	render() {
 		return (
 			<div className="container">
 				<div className="content">
-					<Home />
+					<Home
+						showBio={this.state.show}
+						userInfo={this.state.userInfo}
+						repos={this.state.repos}
+						starreds={this.state.starreds}
+					/>
 				</div>
 			</div>
 		);
 	}
 }
-
-export default App;
