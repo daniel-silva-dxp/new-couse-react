@@ -2,12 +2,12 @@ import React from 'react';
 
 import './style.css';
 
-const Search = () => {
+const Search = ({ labelValue }) => {
 	return (
 		<div className="input-group">
 			<input type="search" required />
 			<span className="bar" />
-			<label>Search user GitHub</label>
+			<label>{labelValue}</label>
 		</div>
 	);
 };
