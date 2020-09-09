@@ -34,7 +34,7 @@
 .content {
 	width: 100%;
 	margin-top: 40px;
-	height: 50vh;
+	height: table;
 	display: flex;
 	align-items: center;
 	justify-content: center;
