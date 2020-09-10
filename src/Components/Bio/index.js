@@ -13,7 +13,7 @@ const Bio = ({ showBio, userInfo, repos, starreds }) => {
 				<div>
 					<div className="wrap-user-info wrap-align">
 						<div className="photo-user">
-							<img src="http://ilustracode.com.br/assets/images/author.jpg" />
+							<img src="https://avatars1.githubusercontent.com/u/16245261?v=4" />
 						</div>
 						<div className="user-info">
 							<h1>
@@ -32,12 +32,6 @@ const Bio = ({ showBio, userInfo, repos, starreds }) => {
 									</li>
 									<li className="margin-right-15">
 										<span className="margin-right-5">
-											<FaStar />
-										</span>
-										<span>10</span>
-									</li>
-									<li className="margin-right-15">
-										<span className="margin-right-5">
 											<FaUserFriends />
 										</span>
 										<span>10</span>
@@ -49,6 +43,10 @@ const Bio = ({ showBio, userInfo, repos, starreds }) => {
 										<span>10</span>
 									</li>
 								</ul>
+								<p>
+									Developing has become a favorite hobby and eventually like to philosophize about
+									life with a beer (🍺).
+								</p>
 							</div>
 						</div>
 					</div>
