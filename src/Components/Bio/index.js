@@ -58,8 +58,7 @@ const Bio = ({ showBio, userInfo, repos, starreds }) => {
 					</div>
 				</div>
 			)}
-			{!showBio &&
-			!!!userInfo && (
+			{!showBio && (
 				<div className="wrap-user-info wrap-align">
 					<div className="user-info">
 						<h1>No Record Found</h1>
