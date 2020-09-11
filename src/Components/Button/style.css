@@ -12,7 +12,7 @@ button {
 button.btn {
 	font-family: 'Open Sans', sans-serif;
 	display: inline-block;
-	border-radius: 3px;
+	border-radius: 8px;
 	-webkit-transition: all 0.1s ease-in-out;
 	transition: all 0.1s ease-in-out;
 	-webkit-box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.2);
@@ -21,7 +21,7 @@ button.btn {
 }
 
 button.btn-medium {
-	width: 120px;
+	width: 172.5px;
 	height: 40px;
 	font-size: 14px;
 	line-height: 14px;
