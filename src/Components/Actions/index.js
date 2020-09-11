@@ -4,11 +4,11 @@ import { FaFolderOpen, FaStar } from 'react-icons/fa';
 
 import './style.css';
 
-const Actions = () => {
+const Actions = ({ getUserRepos,  getUserStarreds}) => {
 	return (
 		<div className="wrap-button">
-			<Button><FaFolderOpen/></Button>
-			<Button><FaStar/></Button>
+			<Button handleClick={getUserRepos}><FaFolderOpen/></Button>
+			<Button handleClick={getUserStarreds}><FaStar/></Button>
 		</div>
 	);
 };

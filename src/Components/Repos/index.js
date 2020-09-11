@@ -6,7 +6,6 @@ const Repos = ({ className, title, repos }) => {
 	return (
 		<div className={`box ${className}`}>
 			<h4>{title}</h4>
-
 			<ul>
 				{repos.map((repo, index) => (
 					<li key={index}>

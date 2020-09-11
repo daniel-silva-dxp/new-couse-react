@@ -49,10 +49,27 @@ export default class App extends Component {
 					show: false,
 					userInfo: null,
 					repos: [],
-					starreds: []
+					starred: []
 				});
 			}
 		}
+	}
+
+	getUserRepos(type) {
+		const login = this.state.userInfo.login;
+		fetch(this.getGitHubApiUrl(login, type))
+							.then((data) => data.json())
+							.then((data) => {
+								this.setState({
+									[type]: data.map((repo) => {
+										return {
+											name: repo.name,
+											id: repo.id,
+											link: repo.html_url
+										}
+									})
+								})
+							})		
 	}
 
 	render() {
@@ -63,8 +80,10 @@ export default class App extends Component {
 						showBio={this.state.show}
 						userInfo={this.state.userInfo}
 						repos={this.state.repos}
-						starreds={this.state.starreds}
+						starred={this.state.starred}
 						handleSearch={(e) => this.getDataGitHubUser(e)}
+						getUserRepos={ () => this.getUserRepos('repos')}
+						getUserStarreds={() => this.getUserRepos('starred')}
 					/>
 				</div>
 			</div>

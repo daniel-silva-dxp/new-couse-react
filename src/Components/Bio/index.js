@@ -5,7 +5,7 @@ import { FaFolderOpen, FaStar, FaUserFriends, FaUserPlus } from 'react-icons/fa'
 
 import './style.css';
 
-const Bio = ({ showBio, userInfo, repos, starreds }) => {
+const Bio = ({ showBio, userInfo, repos, starred, getUserRepos,  getUserStarreds}) => {
 	return (
 		<div>
 			{showBio &&
@@ -51,17 +51,17 @@ const Bio = ({ showBio, userInfo, repos, starreds }) => {
 							</div>
 						</div>
 					</div>
-					<Actions />
+					<Actions getUserRepos={getUserRepos} getUserStarreds={getUserStarreds}/>
 					<div>
 						{!!repos.length && <Repos className="repos" title="Repositories" repos={repos} />}
-						{!!starreds.length && <Repos className="starred" title="Starreds" repos={starreds} />}
+						{!!starred.length && <Repos className="starred" title="Starreds" repos={starred} />}
 					</div>
 				</div>
 			)}
 			{!showBio && (
 				<div className="wrap-user-info wrap-align">
 					<div className="user-info">
-						<h1>No Record Found</h1>
+						<h1>Record not found</h1>
 					</div>
 				</div>
 			)}
