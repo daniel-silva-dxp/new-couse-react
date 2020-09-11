@@ -1,7 +1,7 @@
 .wrap-user-info,
 .photo-user {
-	width: 250px;
-	height: 250px;
+	width: 355px;
+	height: 355px;
 	border-radius: 8px;
 }
 
@@ -15,8 +15,8 @@
 }
 
 .wrap-user-info:hover .photo-user {
-	width: 80px;
-	height: 80px;
+	width: 130px;
+	height: 130px;
 	top: -30px;
 	-webkit-box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.2);
 	-moz-box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.2);
