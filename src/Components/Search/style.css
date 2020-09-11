@@ -4,11 +4,14 @@
 }
 
 input[type="search"] {
+	border-style: none none solid;
+	border-color: #dde4e6;
+	border-width: 2px;
 	outline: 0;
 	width: 100%;
-	padding: 15px 15px;
-	border-radius: 2px;
-	border: 1px solid #dde4e6;
+	height: 40px;
+	padding: 0 15px;
+	border-radius: 8px;
 	background: #fff;
 	font-size: 16px;
 	line-height: 16px;
@@ -22,12 +25,12 @@ input[type="search"]:focus {
 
 label {
 	position: absolute;
-	color: #565656;
+	color: #b1b1b1;
 	font-size: 14px;
-	font-weight: normal;
+	font-weight: 600;
 	pointer-events: none;
 	left: 15px;
-	top: 15px;
+	top: 10px;
 	transition: 0.2s ease all;
 	-moz-transition: 0.2s ease all;
 	-webkit-transition: 0.2s ease all;
@@ -35,8 +38,9 @@ label {
 
 input[type="search"]:focus ~ label,
 input[type="search"]:valid ~ label {
-	top: 2px;
-	font-size: 10px;
+	top: -17px;
+	font-size: 12px;
+	color: #565656;
 }
 
 .bar {
